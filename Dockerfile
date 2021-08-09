@@ -28,6 +28,5 @@ RUN \
     cd /bootstrap && pip install -e /bootstrap && \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/* /var/cache/distfiles/* && \
     chmod 600 /root/.ssh/config && \
-    mkdocs build
 
 CMD ["/usr/bin/bootstrap", "start"]
